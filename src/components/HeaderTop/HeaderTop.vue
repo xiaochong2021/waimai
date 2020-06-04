@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <slot naem="left"></slot>
+    <slot name="left"></slot>
     <span class="header_title">
       <span class="header_title_text ellipsis">{{title}}</span>
     </span>
@@ -9,11 +9,11 @@
 </template>
 
 <script>
+
   export default {
-    name: "HeaderTop",
-    props:{
-      title:String
-    }
+    props: {
+      title: String
+    },
   }
 </script>
 

@@ -6,12 +6,15 @@
           content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1831364_zxitfiy1ny.css">
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
     <script>
+
       if ('addEventListener' in document) {
         document.addEventListener('DOMContentLoaded', function() {
           FastClick.attach(document.body)
         }, false);
       }
+
       if(!window.Promise) {
         document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
       }

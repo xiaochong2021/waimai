@@ -6,10 +6,22 @@
 </template>
 
 <script>
-  import FooterGuide from "@/components/FooterGuide/FooterGuide";
+  import {mapActions} from 'vuex'
+  import FooterGuide from './components/FooterGuide/FooterGuide.vue'
 
   export default {
-    components:{
+
+    mounted () {
+      // this.$store.dispatch('getAddress')
+      this.getAddress()
+      this.getUserInfo()
+    },
+
+    methods: {
+      ...mapActions(['getAddress', 'getUserInfo'])
+    },
+
+    components: {
       FooterGuide
     }
   }
@@ -20,5 +32,4 @@
     width 100%
     height 100%
     background #f5f5f5
-
 </style>
